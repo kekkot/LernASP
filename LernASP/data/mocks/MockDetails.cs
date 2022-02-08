@@ -15,28 +15,28 @@ namespace LernASP.data.mocks
                     Price = 4500,
                     ShortDescription = "Шины летние",
                     IsFavorite= true,
-                    Category = (Category)_idetalsCategory.AllCategories.Where(e => e.Name=="Шины и диски")},
+                    Category = _idetalsCategory.AllCategories.First()},
 
                 new Detail{
                     Name = "Formula F 5W-30",
                     Price = 2500,
                     ShortDescription = "Моторное масло синтетика",
                     IsFavorite= true,
-                    Category = (Category)_idetalsCategory.AllCategories.Where(e => e.Name=="Автохимия")},
+                    Category = _idetalsCategory.AllCategories.First()},
 
                 new Detail{
                     Name = "MYSTERY MNS-410MP",
                     Price = 3000,
                     ShortDescription = "Навигатор спутниковый",
                     IsFavorite= true,
-                    Category = (Category)_idetalsCategory.AllCategories.Where(e => e.Name=="Автоэлектроника")},
+                    Category = _idetalsCategory.AllCategories.First()},
 
                 new Detail{
                     Name = "Little Trees",
                     Price = 95,
                     ShortDescription = "Ароматизатор Ёлочка",
                     IsFavorite= true,
-                    Category = (Category)_idetalsCategory.AllCategories.Where(e => e.Name=="Аксессуары")}
+                    Category = _idetalsCategory.AllCategories.First()}
 
                 };
             }
