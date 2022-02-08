@@ -13,7 +13,7 @@ namespace LernASP.data.mocks
                 { new Detail{
                     Name = "Nordman SX 2", 
                     Price = 4500,
-                    ShortDescription = "Шины летник",
+                    ShortDescription = "Шины летние",
                     IsFavorite= true,
                     Category = (Category)_idetalsCategory.AllCategories.Where(e => e.Name=="Шины и диски")},
 
