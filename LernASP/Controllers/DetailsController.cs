@@ -1,4 +1,5 @@
 ﻿using LernASP.data.Interface;
+using LernASP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LernASP.Controllers
@@ -16,8 +17,13 @@ namespace LernASP.Controllers
 
         public ViewResult List() //При обращении к List получаем html страницу
         {
-            var details = _allDetails.details;
-            return View(details);//До вывода страницы, передаем объект со всеми товарами на сайте
+            /*ViewBag.Category = "Some New";//Вьюбек сам передается на страницу, не рекомендуется
+            var details = _allDetails.details*/
+            DetailsListViewModel obj = new DetailsListViewModel();
+            obj.GetAllDetails = _allDetails.details;
+            obj.CurrCategory = "Автохимия";
+
+            return View(obj);//До вывода страницы, передаем объект со всеми товарами на сайте
         }
     }
 }

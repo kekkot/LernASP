@@ -1,29 +1,19 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@using LernASP.data.Internal_models;
-@model IEnumerable<Detail>;
+@using LernASP.ViewModels;
+@model DetailsListViewModel;
 @{
-    Layout = null; //Главного шаблона нет
+    Layout = "_Layout"; //Главный шаблон
 }
-
-<!DOCKTYPE html>
-
-<html>
-    <head>
-        <meta name = "viewport" content = "width=device-width"/>
-        <title>List</title>
-    </head>
-    <body>
-        <h2>Все комплектующие</h2>
-        @{
-            foreach(var detail in Model)
-            {
-                <div>
-                    <h2>Деталь: @detail.Name</h2>
-                    <p>Цена: @detail.Price.ToString("c")</p>@*//Денежный формат*@
-                </div>
-            }
+    <h2>Все комплектующие</h2>
+    <h3>@Model.CurrCategory</h3>
+    @{
+        foreach(var detail in Model.GetAllDetails)
+        {
+            <div>
+                <h2>Деталь: @detail.Name</h2>
+                <p>Цена: @detail.Price.ToString("c")</p>@*//Денежный формат*@
+            </div>
         }
-    </body>
-</html>
+    }
