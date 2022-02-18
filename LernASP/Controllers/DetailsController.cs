@@ -19,6 +19,7 @@ namespace LernASP.Controllers
         {
             /*ViewBag.Category = "Some New";//Вьюбек сам передается на страницу, не рекомендуется
             var details = _allDetails.details*/
+            ViewBag.Title = "Страница с запчастями";
             DetailsListViewModel obj = new DetailsListViewModel();
             obj.GetAllDetails = _allDetails.details;
             obj.CurrCategory = "Автохимия";

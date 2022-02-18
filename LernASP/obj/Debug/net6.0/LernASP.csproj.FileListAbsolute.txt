@@ -21,3 +21,4 @@ D:\Learn\ASP.NET\Lern\LernASP\LernASP\obj\Debug\net6.0\LernASP.dll
 D:\Learn\ASP.NET\Lern\LernASP\LernASP\obj\Debug\net6.0\ref\LernASP.dll
 D:\Learn\ASP.NET\Lern\LernASP\LernASP\obj\Debug\net6.0\LernASP.pdb
 D:\Learn\ASP.NET\Lern\LernASP\LernASP\obj\Debug\net6.0\LernASP.genruntimeconfig.cache
+D:\Learn\ASP.NET\Lern\LernASP\LernASP\bin\Debug\net6.0\LernASP.staticwebassets.runtime.json

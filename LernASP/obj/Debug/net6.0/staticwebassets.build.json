@@ -1,11 +1,54 @@
 {
   "Version": 1,
-  "Hash": "0zlStiHHDuZq6QqmF28XU99XLE2gJnIlanfNadWlw3c=",
+  "Hash": "M4kXYrx5y/aS712kuvNHVkoYomUYVtG/FzBaTWY6rnM=",
   "Source": "LernASP",
   "BasePath": "_content/LernASP",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "LernASP\\wwwroot",
+      "Source": "LernASP",
+      "ContentRoot": "D:\\Learn\\ASP.NET\\Lern\\LernASP\\LernASP\\wwwroot\\",
+      "BasePath": "_content/LernASP",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Learn\\ASP.NET\\Lern\\LernASP\\LernASP\\wwwroot\\css\\bootstrap.min.css",
+      "SourceId": "LernASP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Learn\\ASP.NET\\Lern\\LernASP\\LernASP\\wwwroot\\",
+      "BasePath": "_content/LernASP",
+      "RelativePath": "css/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
+    },
+    {
+      "Identity": "D:\\Learn\\ASP.NET\\Lern\\LernASP\\LernASP\\wwwroot\\js\\bootstrap.min.js",
+      "SourceId": "LernASP",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Learn\\ASP.NET\\Lern\\LernASP\\LernASP\\wwwroot\\",
+      "BasePath": "_content/LernASP",
+      "RelativePath": "js/bootstrap.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
+    }
+  ]
 }
