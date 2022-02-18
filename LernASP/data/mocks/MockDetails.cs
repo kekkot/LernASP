@@ -11,9 +11,10 @@ namespace LernASP.data.mocks
             {
                 return new List<Detail> //Список всех товаров
                 { new Detail{
-                    Name = "Nordman SX 2", 
+                    Name = "Nordman SX 2",
                     Price = 4500,
                     ShortDescription = "Шины летние",
+                    Img = "/img/Шины.jpeg",
                     IsFavorite= true,
                     Category = _idetalsCategory.AllCategories.First()},
 
@@ -21,6 +22,7 @@ namespace LernASP.data.mocks
                     Name = "Formula F 5W-30",
                     Price = 2500,
                     ShortDescription = "Моторное масло синтетика",
+                    Img = "/img/Масло.png",
                     IsFavorite= true,
                     Category = _idetalsCategory.AllCategories.First()},
 
@@ -28,16 +30,9 @@ namespace LernASP.data.mocks
                     Name = "MYSTERY MNS-410MP",
                     Price = 3000,
                     ShortDescription = "Навигатор спутниковый",
-                    IsFavorite= true,
-                    Category = _idetalsCategory.AllCategories.First()},
-
-                new Detail{
-                    Name = "Little Trees",
-                    Price = 95,
-                    ShortDescription = "Ароматизатор Ёлочка",
+                    Img= "/img/Навигатор.jpeg",
                     IsFavorite= true,
                     Category = _idetalsCategory.AllCategories.First()}
-
                 };
             }
         }

@@ -2,14 +2,21 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 
-    <h2>Все комплектующие</h2>
-    <h3>@Model.CurrCategory</h3>
+<h2>Все комплектующие</h2>
+<h3>@Model.CurrCategory</h3>
+<div class="row mt-5 mb-2">
     @{
         foreach(var detail in Model.GetAllDetails)
         {
-            <div>
-                <h2>Деталь: @detail.Name</h2>
+            <div class="col-lg-4">
+                <img class = "img-thumbnail" src="@detail.Img" alt="@detail.Name"/>
+                <h2>@detail.Name</h2>
+                <p>@detail.ShortDescription</p>
                 <p>Цена: @detail.Price.ToString("c")</p>@*//Денежный формат*@
+                <p><a class="btn btn-warning" href="#">Подробнее</a></p>
             </div>
         }
     }
+</div>
+
+

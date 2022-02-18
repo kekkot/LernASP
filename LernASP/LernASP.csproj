@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\" />
-    <Folder Include="wwwroot\css\" />
+    <Content Remove="wwwroot\img\Масло.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="wwwroot\img\Масло.png" />
   </ItemGroup>
 
 </Project>
