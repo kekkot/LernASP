@@ -4,15 +4,15 @@
     {
         public int Id { get; set; } //Id детали
 
-        public string Name { get; set; } //Название детали
+        public string? Name { get; set; } //Название детали
 
         public short Price { get; set; } //Цена, не должна быть отрицательной
 
-        public string ShortDescription { get; set; } //Короткое описание
+        public string? ShortDescription { get; set; } = "1"; //Короткое описание
 
-        public string LongDescription { get; set; } //Полное описание
+        public string? LongDescription { get; set; } = "1"; //Полное описание
 
-        public string Img { get; set; } //Ссылка на картинку
+        public string? Img { get; set; } //Ссылка на картинку
 
         public bool IsFavorite { get; set; } //Категория лучших товаров
 
@@ -20,7 +20,7 @@
 
         public int CategoryID { get; set; } //Категория товара
 
-        public Category Category { get; set; } //Объект категории
+        public Category? Category { get; set; } //Объект категории
 
     }
 }

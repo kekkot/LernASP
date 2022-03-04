@@ -5,7 +5,7 @@ namespace LernASP.data.Interface
     public interface IAllDetails
     {
         IEnumerable<Detail> details { get; } //Для вывода всех товаров
-        IEnumerable<Detail> getFavDetails { get; set; }
+        IEnumerable<Detail> getFavDetails { get;}
         Detail getObjectDetail(int detailId);
 
     }

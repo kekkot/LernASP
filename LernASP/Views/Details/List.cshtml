@@ -6,15 +6,9 @@
 <h3>@Model.CurrCategory</h3>
 <div class="row mt-5 mb-2">
     @{
-        foreach(var detail in Model.GetAllDetails)
-        {
-            <div class="col-lg-4">
-                <img class = "img-thumbnail" src="@detail.Img" alt="@detail.Name"/>
-                <h2>@detail.Name</h2>
-                <p>@detail.ShortDescription</p>
-                <p>Цена: @detail.Price.ToString("c")</p>@*//Денежный формат*@
-                <p><a class="btn btn-warning" href="#">Подробнее</a></p>
-            </div>
+        foreach(Detail detail in Model.GetAllDetails)
+        {            
+            @Html.Partial("AllDetails", detail)
         }
     }
 </div>
