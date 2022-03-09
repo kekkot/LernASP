@@ -57,7 +57,7 @@ namespace LernASP.Migrations
                 oldType: "nvarchar(max)");
 
             migrationBuilder.CreateTable(
-                name: "CartItems",
+                name: "ShopCartItems",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)

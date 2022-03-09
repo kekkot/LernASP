@@ -11,7 +11,7 @@ namespace LernASP.data.Internal_models
             this.appDBContent = addDBContent;
         }
         public string ShopCartId { get; set; }
-        public List<ShopCart> ListShopItems { get; set; }
+        public List<ShopCartItem> ListShopItems { get; set; }
 
         public static ShopCart GetCart(IServiceProvider service)
         {
@@ -24,9 +24,9 @@ namespace LernASP.data.Internal_models
             return new ShopCart(context) { ShopCartId = shopCartId};
         }
 
-        public void AddToCart(Detail detail, int amout)
+        public void AddToCart(Detail detail)
         {
-            appDBContent.CartItems.Add(new CartItem
+            appDBContent.ShopCartItems.Add(new ShopCartItem
             {
                 ShopCartId = ShopCartId,
                 detail = detail,
@@ -35,9 +35,9 @@ namespace LernASP.data.Internal_models
             appDBContent.SaveChanges();
         }
 
-        public List<CartItem> GetShopItems()
+        public List<ShopCartItem> GetShopItems()
         {
-            return appDBContent.CartItems.Where(c => c.ShopCartId == ShopCartId).Include(s => s.detail).ToList();
+            return appDBContent.ShopCartItems.Where(c => c.ShopCartId == ShopCartId).Include(s => s.detail).ToList();
         }
 
     }

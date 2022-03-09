@@ -11,6 +11,6 @@ namespace LernASP.data
         }
         public DbSet<Detail> Details { get; set; } = null!; //Устанавливает все товары
         public DbSet<Category> Categories { get; set; } = null!; //Устанавливает все категории
-        public DbSet<CartItem> CartItems { get; set; } = null!;
+        public DbSet<ShopCartItem> ShopCartItems { get; set; } = null!;
     }
 }

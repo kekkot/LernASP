@@ -1,5 +1,5 @@
 ﻿using LernASP.data.Internal_models;
-using LernASP.data.Repository;
+using LernASP.data.Interface;
 using LernASP.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,10 +7,10 @@ namespace LernASP.Controllers
 {
     public class ShopCartController :Controller
     {
-        private readonly DetailRepository _detailRep;
+        private readonly IAllDetails _detailRep;
         private readonly ShopCart _shopCart;
 
-        public ShopCartController(DetailRepository detailRepository, ShopCart shopCart)
+        public ShopCartController(IAllDetails detailRepository, ShopCart shopCart)
         {
             _detailRep = detailRepository;
             _shopCart = shopCart;
@@ -26,8 +26,14 @@ namespace LernASP.Controllers
             return View(obj);
         }
 
-        public RedirectToActionResult AddtoCart(int id) { 
-        
+        public RedirectToActionResult AddtoCart(int id)//Переадресация на другу стр 
+        {
+            var item = _detailRep.details.FirstOrDefault(i => i.Id == id);
+            if(item != null)
+            {
+                _shopCart.AddToCart(item);
+            }
+            return RedirectToAction("Index");
         }
     }
 }

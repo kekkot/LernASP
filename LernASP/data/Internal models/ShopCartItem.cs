@@ -1,6 +1,6 @@
 ﻿namespace LernASP.data.Internal_models
 {
-    public class CartItem
+    public class ShopCartItem
     {
         public int Id { get; set; }
         public Detail? detail { get; set; }
