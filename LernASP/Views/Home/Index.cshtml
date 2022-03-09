@@ -1,12 +1,11 @@
-﻿<h2>Все комплектующие</h2>
-<h3>@Model.CurrCategory</h3>
+﻿@model HomeViewModel
+
+<h2>Топ контент</h2>
 <div class="row mt-5 mb-2">
     @{
-        foreach(Detail detail in Model.GetAllDetails)
+        foreach(Detail detail in Model.favDetails)
         {            
             @Html.Partial("AllDetails", detail) //Имя шаблона и что передаем
         }
     }
 </div>
-
-

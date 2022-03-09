@@ -7,7 +7,7 @@ namespace LernASP.Controllers
 {
     public class ShopCartController :Controller
     {
-        private readonly IAllDetails _detailRep;
+        private IAllDetails _detailRep;
         private readonly ShopCart _shopCart;
 
         public ShopCartController(IAllDetails detailRepository, ShopCart shopCart)
