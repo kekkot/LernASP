@@ -42,6 +42,11 @@ app.UseEndpoints(endpoints =>
 //app.MapGet("/", () => "Hello World!");//MapGet первым параметром принимет путь, по которому обратится приложение
 //Вторым параметром принимает обработчик запроса по этому маршруту в виде функции
 
+//Самопальное говно
+/*var routeBuilder = new RouteBuilder(app);
+routeBuilder.MapRoute("default", "Home/Index/{id?}");
+routeBuilder.MapRoute(name: "categoryFilter", template: "Details/{action}/{category?}", defaults: new {Controller="Details", action="list"});
+app.UseRouter(routeBuilder.Build());*/
 
 app.Run(async (context) =>
 {
